@@ -1,0 +1,23 @@
+.netflix-video-card-container {
+    margin-top: 0.5rem;
+    width:95%;
+    height: 10vw;
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    margin-top: 3rem;
+ }
+
+ .video-card {
+    min-width: calc(100%/5 - 10px);
+    width: calc(100%/5 - 10px);
+    height: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    background: #030b17;
+ }
+
+ .video-card img{
+    width: 100%;
+    object-fit: cover;
+}

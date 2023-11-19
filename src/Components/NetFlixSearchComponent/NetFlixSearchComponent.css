@@ -1,0 +1,61 @@
+.netflix-itemCarouselComponent-container
+{
+    width: 95%;
+    height: 200px;
+    margin-inline:0.5rem !important;
+    color: white;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8rem !important;
+}
+
+
+.netflix-searchItemComponent-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: auto !important;
+    gap: 1rem;
+}
+.netflix-searchItemComponent-container .search-item{
+   width: 100%;
+   height: 300px;
+   border-radius: 5px !important;
+   position: relative;
+   transform: all 1s;
+   overflow: hidden;
+}
+
+ .netflix-searchItemComponent-container .search-item img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+ }
+
+.netflix-searchItemComponent-container-desc{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-inline: 1rem;
+    opacity: 0;
+}
+.netflix-searchItemComponent-container .search-item:hover{
+    cursor: pointer;
+    background-color: rgba(1, 1, 33, 0.879);
+
+ }
+.netflix-searchItemComponent-container .search-item:hover img{
+    opacity: 0.3;
+ }
+ .netflix-searchItemComponent-container .search-item:hover .netflix-searchItemComponent-container-desc{
+    opacity: 1;
+
+
+ }
+@media (max-width:600px) {
+    .netflix-itemCarouselComponent-container
+    {
+        width: 100% !important;
+    }
+}

@@ -1,0 +1,36 @@
+.LoginLoadingModel-modal-style {
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(13, 1, 24, 0.707);
+    margin: auto !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .LoginLoadingModel-background {
+      justify-content: center;
+      background: #FFFFFF;
+      color: #000000;
+      position: absolute;
+      z-index: 100;
+      border-radius: 5px;
+      width: 50%;
+      height: auto;
+      top: 50%;
+      left: 50%;
+      overflow: hidden;
+      transform: translate(-50%, -50%);
+      margin: auto;
+      text-align: center;
+      height: 200px;
+      display: flex;
+      align-items: center;
+  }
+  
+

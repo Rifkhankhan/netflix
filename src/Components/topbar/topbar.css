@@ -1,0 +1,153 @@
+.netflix-topbarContainer {
+  height: 50px;
+  background-color: rgb(1, 1, 33);
+  display: flex;
+  align-items: center;
+  position: sticky !important;
+  z-index: 10;
+  width: 100% !important;
+  flex-grow: 1;
+  top: 0;
+}
+.topbar-login-btn{
+  padding: .5rem;
+  padding-inline: 1rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  border: none;
+  color: black;
+  font-weight: 600;
+}
+.netflix-topbarLeft {
+  flex: 0.4;
+}
+
+
+.netflix-logo {
+  font-size: 15px;
+  margin-left: 15px;
+  color: white;
+  cursor: pointer;
+}
+
+.netflix-logo:hover{
+
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+
+.netflix-topbarCenter {
+  flex: 3;
+}
+
+.search-box {
+  border: none;
+  border-bottom: 1px solid #aaa;
+  background-color: transparent;
+  outline: none;
+  height: 30px;
+  color: white !important; 
+  width: 250px;
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 500;
+  transition: .5s;
+}
+
+.search-box:focus {
+  width: 400px;
+  border-color: #1f80e0;
+}
+
+.netflix-topbarRight {
+  flex: 1.5;
+  display: flex;
+  align-items: center !important;
+  justify-content: space-around;
+  color: white;
+}
+
+.netflix-topbarLink {
+  margin-right: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+.netflix-topbarLink:hover{
+ text-decoration: none;
+ color: white;
+}
+.netflix-topbarIcons {
+  display: flex;
+}
+
+.netflix-topbarIconItem {
+  margin-right: 15px;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+}
+.netflix-topbarIconItem img{
+  width: 35px;
+}
+.netflix-topbarIconItem span{
+ position: absolute;
+  width: 18px;
+  font-size: 12px;
+  font-weight: bold;
+ top: 5px;
+ right: 10px;
+ color: white;
+ border-radius: 25px;
+ padding: 1px;
+ text-align: center !important;
+}
+
+.netflix-topbarIconBadge {
+  width: 15px;
+  height: 15px;
+  background-color: red;
+  border-radius: 50%;
+  color: white;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.netflix-topbarImg {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.netflix-topbarLeft img{
+  width: 30px;
+  margin-left: 1rem;
+  display: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.netflix-topbarLeft img:hover{
+ cursor: pointer;
+}
+
+
+
+@media (max-width:1100px) {
+  .netflix-topbarLeft img{
+    
+    display: flex;
+    float: left;
+  }
+}

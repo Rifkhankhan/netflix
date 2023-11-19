@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.netflix-login-page-container{
+    width: 70%;
+
+    box-sizing: border-box;
+    box-shadow: 0 .5rem 2rem black;
+    display: flex;
+    background-color: white;
+    height: 100%;
+    margin: auto !important;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 100vh;
+  }
+
+.netflix-login-page-container .netflix-login-page-container-leftSide
+{
+    background-image: url('../../Images/ironman-2008.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+.netflix-login-page-container .netflix-login-page-container-rightSide
+{
+    width: 50%;
+    margin: auto !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.netflix-login-page-container .netflix-login-page-container-rightSide h2
+{
+   font-size: 30px;
+   color: darkblue;
+   letter-spacing: .2cm;
+   font-style: italic;
+   text-decoration: underline;
+   
+   margin: auto !important;
+}
+.netflix-login-page-container .netflix-login-page-container-rightSide 
+.netflix-login-page-form
+{
+   margin: auto !important;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   width: 100%;
+   margin-top: 2rem !important;
+
+}
+
+.netflix-login-page-container .netflix-login-page-container-rightSide 
+.netflix-login-page-form .form-group{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.netflix-login-page-container .netflix-login-page-container-rightSide 
+.netflix-login-page-form .form-group input{
+    width: 70%;
+    outline: none;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid blue;
+    font-size: large;
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+    margin: auto !important;
+}
+
+
+
+.netflix-login-page-container .netflix-login-page-container-rightSide 
+.netflix-login-page-form .form-group .input-feedback{
+    color: red;
+    margin: 0% !important;
+    padding: 0% !important;
+    width: 70%;
+    text-align: start;
+    
+}
+
+.netflix-login-page-container .netflix-login-page-container-rightSide 
+.netflix-login-page-form button{
+    padding: 1rem ;
+    padding-inline: 2rem;
+    background-color: darkblue;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    display: block;
+    width: 70%;
+    margin: auto !important;
+    font-size: larger;
+    font-weight: bolder;
+    transition: all .5s;
+}
+
+.netflix-login-page-container .netflix-login-page-container-rightSide 
+.netflix-login-page-form button:hover{
+    cursor: pointer;
+    background-color: rgb(94, 94, 6);
+    color: white;
+}
+
+
+.netflix-login-page-container .netflix-login-page-container-rightSide 
+.netflix-login-page-form button:disabled{
+    cursor: default;
+    background-color:black;
+    color: white;
+}
+@media (max-width:860px) {
+    .netflix-login-page-container{
+      
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        top: 4rem;
+      }
+    
+    .netflix-login-page-container .netflix-login-page-container-leftSide
+    {
+        width: 100%;
+        min-height: 550px;
+
+        height: 50% !important;
+        background-image: url('../../Images/ironman-2008.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .netflix-login-page-container .netflix-login-page-container-rightSide
+    {
+        width: 100%;
+       
+    }
+
+    .netflix-login-page-container .netflix-login-page-container-rightSide 
+    .netflix-login-page-form .form-group input{
+        width: 90%;
+
+    }
+
+}
+
+
+@media (max-width:500px) {
+    .netflix-login-page-container{
+      
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        top: 4rem;
+        width: 100%;
+      }
+    
+      .netflix-login-page-container .netflix-login-page-container-leftSide
+    {
+        width: 100%;
+        min-height: 600px;
+        height: 50% !important;
+        background-image: url('../../Images/ironman-2008.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+}
+

@@ -1,0 +1,140 @@
+.netflix-profile-Content{
+    flex: 3;
+    height: 100%;
+    min-height: 87.5vh;
+    width: 100% !important;
+    background-color: white;
+}
+.netflix-profile-Content-title{
+  margin: 1rem;
+  color: darkblue;
+  display: flex;
+  justify-content: space-between;
+}
+.netflix-profile-Content-title .addbtn{
+  margin-top: 1rem;
+
+    font-size: 50px;
+    border-radius: 5px;
+    background-color: rgba(7, 17, 128, 0.541);
+    transition: all 0.2s;
+    color: white;
+  }
+.netflix-profile-Content-title .addbtn:hover{
+cursor: pointer;
+background-color: rgb(10, 10, 10);
+color: rgb(255, 255, 255);
+}
+.netflix-profile-Content-title .backbtn{
+  margin-top: 1rem;
+
+    font-size: 50px;
+   
+    transition: all 0.2s;
+    color: rgba(7, 17, 128, 0.541);
+  }
+.netflix-profile-Content-title .backbtn:hover{
+    cursor: pointer;
+   opacity: 0.7;
+} 
+
+.netflix-profile-additem-container{
+  margin: auto !important;
+  width: 100%;
+}
+.netflix-addForm{
+  margin: auto !important;
+  width: 90%;
+  background-color: antiquewhite;
+  border-radius: 5px;
+}
+
+.netflix-addForm .netflix-additem-form{
+  width: 100%;
+  padding: 1rem;
+}
+
+.netflix-addForm .netflix-additem-form .formGroup{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 20% 50%;
+  margin-top: 2rem;
+}
+.netflix-addForm .netflix-additem-form .formGroup label{
+  padding: 1rem;
+  font-size: 20px;
+  letter-spacing: .1cm;
+  font-weight: 600;
+}
+.netflix-addForm .netflix-additem-form .formGroup input,select{
+  border: none;
+  outline: 1px solid darkblue;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+
+.netflix-addForm .netflix-additem-form .formGroup textarea{
+  border: none;
+  outline: 1px solid darkblue;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.netflix-addForm .netflix-additem-form .submit-btn
+{
+  display: block;
+  padding: 0.5rem;
+  padding-inline: 2rem;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  width:30%;
+  margin: auto !important;
+}
+
+.netflix-addForm .netflix-additem-form .loading-btn
+{
+  display: block;
+  padding: 0.5rem;
+  padding-inline: 2rem;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+
+}
+@media (max-width:910px) {
+  .netflix-addForm .netflix-additem-form .formGroup{
+   display: flex;
+   flex-direction: column;
+  }
+
+  .netflix-addForm .netflix-additem-form .formGroup label{
+    font-size: 20px;
+    letter-spacing: .1cm;
+    font-weight: 600;
+  }
+  .netflix-addForm .netflix-additem-form .formGroup input{
+    border: none;
+    outline: 1px solid darkblue;
+    padding: 1rem;
+    border-radius: 5px;
+    width: 70%;
+    margin-left: 1rem;
+  }
+  .netflix-addForm .netflix-additem-form .formGroup select{
+    border: none;
+    outline: 1px solid darkblue;
+    padding: 1rem;
+    border-radius: 5px;
+    width: 70%;
+    margin-left: 1rem;
+  }
+  .netflix-addForm .netflix-additem-form .formGroup textarea{
+    margin-left: 1rem;
+    width: 70%;
+
+  }
+}

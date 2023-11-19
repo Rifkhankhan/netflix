@@ -1,0 +1,132 @@
+
+.netflix-profile-category-container{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 1rem;
+}
+
+.netflix-profile-category-container 
+.netflix-category-list{
+  width: 50%;
+  background-color: antiquewhite;
+  border-radius: 5px;
+  margin-left: 2rem;
+
+}
+.netflix-profile-category-container 
+.netflix-category-list ul{
+  width: 100%;
+  list-style: none;
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  margin-inline: 1rem;
+  font-family: sans-serif;
+}
+.netflix-profile-category-container 
+.netflix-category-list ul li {
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ text-transform: capitalize !important;
+}
+
+.netflix-profile-category-container 
+.netflix-category-list ul .netflix-category-list-item 
+.netflix-category-list-item-delete-icon{
+ font-size: 25px;
+ color: red;
+ display: none;
+}
+
+.netflix-profile-category-container 
+.netflix-category-list ul .netflix-category-list-item:hover {
+  cursor: pointer;
+  color: darkblue;
+}
+.netflix-profile-category-container 
+.netflix-category-list ul .netflix-category-list-item:hover 
+.netflix-category-list-item-delete-icon{
+  cursor: pointer;
+  color: red;
+  display: flex;
+}
+.netflix-category-addForm{
+  width: 50%;
+  background-color: antiquewhite;
+  border-radius: 5px;
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.netflix-category-addForm .netflix-category-form{
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.netflix-category-addForm .netflix-category-form .formGroup{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 20% 50%;
+  margin-top: 2rem;
+}
+.netflix-category-addForm .netflix-category-form .formGroup label{
+  padding: 1rem;
+  font-size: 20px;
+  letter-spacing: .1cm;
+  font-weight: 600;
+}
+.netflix-category-addForm .netflix-category-form .formGroup input{
+  padding: 1rem;
+  outline: blue;
+  border: none;
+  border-radius: 5px;
+}
+.category-form-btn .addCet-btn{
+  margin: auto !important;
+  margin-top: 2rem !important;
+  padding: 1rem;
+  font-size: 17px;
+}
+
+
+
+
+.addCet-btn
+{
+  display: block;
+  padding: 0.5rem;
+  padding-inline: 2rem;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  width:30%;
+  margin-top: 1rem !important;
+}
+
+@media (max-width:910px) {
+  .netflix-category-addForm .netflix-category-form .formGroup{
+   display: flex;
+   flex-direction: column;
+  }
+
+  .netflix-category-addForm .netflix-category-form .formGroup label{
+    font-size: 20px;
+    letter-spacing: .1cm;
+    font-weight: 600;
+  }
+  .netflix-category-addForm .netflix-category-form .formGroup input{
+    border: none;
+    outline: 1px solid darkblue;
+    padding: 1rem;
+    border-radius: 5px;
+    width: 70%;
+    margin-left: 1rem;
+  }
+  
+}

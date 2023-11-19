@@ -1,0 +1,90 @@
+.netflix-item-card-container 
+
+{
+    padding-inline: 0.2rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transform: all 1s;
+    position: relative;
+    background-color:rgba(2, 4, 36, 0.747)!important;
+    position: relative;
+    color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+    height: 200px;
+}
+
+.netflix-item-card-container  .MuiSvgIcon-root
+{
+    float: right;
+    font-size: 25px;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+}
+.netflix-item-card-container .thumbdown
+{
+   display: none;
+   transition: all 0.3s ease-in-out;
+}
+.netflix-item-card-container .thumbdown:hover
+{
+   transform: scale(1.2);
+}
+
+.netflix-item-card-container .thumbdown:hover .netflix-item-card-container 
+{
+    transform:rotate(-10deg) !important;
+
+}
+.netflix-item-card-container:hover 
+{
+   cursor: pointer;
+   background-blend-mode: multiply;
+}
+
+.netflix-item-card-container:hover .thumbup
+{
+   display: none;
+}
+.netflix-item-card-container:hover .thumbdown
+{
+   display: flex;
+   color: red;
+}
+.netflix-item-card-container  
+.netflix-item-card-container-desc
+{
+    opacity: 0;
+    color: white;
+    position: absolute;
+    bottom:  0;
+    left: 0;
+    margin-inline: 0.5rem;
+}
+.netflix-item-card-container   .name {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: capitalize !important;
+    margin-top: 55%;
+   opacity: 1;
+
+ }
+
+ .netflix-item-card-container-desc .des {
+    color: #fff;
+    opacity: 0.8;
+    margin: 5px 0;
+    font-weight: 500;
+    font-size: 12px;
+    color: white;
+   opacity: 1;
+
+ }
+
+.netflix-item-card-container:hover  .netflix-item-card-container-desc
+{
+   opacity: 1;
+}

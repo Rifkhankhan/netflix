@@ -1,0 +1,66 @@
+.netflix-imageCarouselComponent-container
+{
+    width: 95%;
+    height: 500px;
+    margin-inline:0.5rem !important;
+    background-color: rgb(1, 1, 33);
+    color: white;
+    margin-top: .1rem;
+   /* overflow: hidden; */
+   border-radius: 0.5rem;
+}
+
+.netflix-imageCarouselComponent-container 
+.netflix-imageCarouselComponent-sub-container
+{
+    margin: auto !important;
+   display: grid !important;
+   grid-template-columns: 40% 60%;
+   /* overflow: hidden; */
+
+}
+.netflix-imageCarouselComponent-container 
+.netflix-imageCarouselComponent-sub-container 
+.netflix-imageCarouselComponent-container-desc
+{
+   display: flex;
+   flex-direction: column;
+   padding-inline: 4rem;
+   margin-top: 15%;
+   height: 100%;
+}
+.netflix-imageCarouselComponent-container 
+.netflix-imageCarouselComponent-sub-container p
+{
+    margin-top: 3rem;
+   font-size: 17px;
+    overflow: hidden;
+     text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 10;
+    line-clamp: 10;
+    -webkit-box-orient: vertical; 
+}
+
+.netflix-imageCarouselComponent-container .slick-dots{
+    display: none !important;
+}
+
+.netflix-imageCarouselComponent-container .slick-slider button{
+    display: none !important;
+}
+
+.netflix-imageCarouselComponent-container  
+.netflix-imageCarouselComponent-container-image
+{
+    height: 500px !important;
+    width: 100%;
+
+}
+
+@media (max-width:600px) {
+    .netflix-imageCarouselComponent-container
+    {
+        width: 100% !important;
+    }
+}

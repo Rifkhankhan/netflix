@@ -1,0 +1,220 @@
+.netflix-ProfileSidebar{
+    flex: 3;
+    /* top: 90px; */
+    min-height:calc(100vh - 50px) ;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(1, 1, 33);
+    color: white;
+    overflow-y: scroll;
+    position: sticky;
+    transition: left 0.3s ease-in-out !important;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  ::-webkit-scrollbar-track {
+    background-color:black;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: yellow;
+  }
+
+
+  .netflix-ProfileSidebar .sidebarWrapper {
+    padding: 20px;
+  }
+
+  .netflix-ProfileSidebar .sidebarList {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  .netflix-ProfileSidebar .sidebarListItem {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    transition: all 0.8s  ease-in-out !important;
+  }
+
+  .netflix-ProfileSidebar .sidebarListItem:hover {
+    cursor: pointer;
+    width: 100%;
+
+  }
+  .sidebarListItemText{
+    transition: all 0.5s  ease-in-out !important;
+
+  }
+  .netflix-ProfileSidebar .sidebarListItem:hover .sidebarListItemText {
+    transform: translate(100%);
+  }
+  .netflix-ProfileSidebar .sidebarListItem .sidebarIcon {
+   font-size: 25px;
+   transition: all 0.5s  ease-in-out !important;
+
+  }
+  .netflix-ProfileSidebar .sidebarListItem:hover .sidebarIcon {
+    transform: rotate(360deg);
+  }
+  .netflix-ProfileSidebar .sidebarListItem .sidebarListItemText {
+    font-size: 15px;
+   }
+  .netflix-ProfileSidebar .sidebarIcon {
+    margin-right: 15px;
+  }
+  
+  .netflix-ProfileSidebar .sidebarButton {
+    width: 150px;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 500;
+  }
+
+  .netflix-ProfileSidebar .sidebarHr {
+    margin: 20px 0;
+  }
+  
+  .netflix-ProfileSidebar .sidebarFriendList {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  @media (max-width:1290px) {
+    .netflix-ProfileSidebar .sidebarListItem:hover .sidebarListItemText {
+      transform: translate(75%);
+    }
+  }
+
+  @media (max-width:1270px) {
+    .netflix-ProfileSidebar .sidebarListItem:hover .sidebarListItemText {
+      transform: translate(65%);
+    }
+  }
+
+  @media (max-width:1220px) {
+    .netflix-ProfileSidebar .sidebarListItem:hover .sidebarListItemText {
+      transform: translate(55%);
+    }
+  }
+
+  @media (max-width:1180px) {
+    .netflix-ProfileSidebar .sidebarListItem:hover .sidebarListItemText {
+      transform: translate(45%);
+    }
+  }
+
+  @media (max-width:1125px) {
+    .netflix-ProfileSidebar .sidebarListItem:hover .sidebarListItemText {
+      transform: translate(35%);
+    }
+  }
+
+  @media (max-width:1100px) {
+    .netflix-ProfileSidebar .sidebarListItem:hover .sidebarListItemText {
+      transform: translate(10%);
+    }
+  }
+  @media (max-width:1100px) {
+    .netflix-ProfileSidebar{
+     display: none;
+  }
+  }
+  
+/* toggle */
+.netflix-ProfileSidebarToggle{
+  width: 200px;
+  
+  position: absolute;
+  top: 90px;
+  right:0;
+  height: 100% !important;
+  min-height: 100%;
+  background-color: rgb(1, 1, 33);
+  color: white;
+  overflow-y: scroll;
+  opacity: 0.85;
+}
+
+.netflix-ProfileSidebarToggle .sidebarWrapper {
+  padding: 20px;
+}
+
+.netflix-ProfileSidebarToggle .sidebarList {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.netflix-ProfileSidebarToggle .sidebarListItem {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  transition: all 0.8s  ease-in-out !important;
+}
+
+.netflix-ProfileSidebarToggle .sidebarListItem:hover {
+  cursor: pointer;
+  width: 100%;
+
+}
+.sidebarListItemText{
+  transition: all 0.5s  ease-in-out !important;
+
+}
+.netflix-ProfileSidebarToggle .sidebarListItem:hover .sidebarListItemText {
+  transform: translate(100%);
+}
+.netflix-ProfileSidebarToggle .sidebarListItem .sidebarIcon {
+ font-size: 25px;
+ transition: all 0.5s  ease-in-out !important;
+
+}
+.netflix-ProfileSidebarToggle .sidebarListItem:hover .sidebarIcon {
+  transform: rotate(360deg);
+}
+.netflix-ProfileSidebarToggle .sidebarListItem .sidebarListItemText {
+  font-size: 15px;
+ }
+.netflix-ProfileSidebarToggle .sidebarIcon {
+  margin-right: 15px;
+}
+
+.netflix-ProfileSidebarToggle .sidebarButton {
+  width: 150px;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.netflix-ProfileSidebarToggle .sidebarHr {
+  margin: 20px 0;
+}
+
+.netflix-ProfileSidebarToggle .sidebarFriendList {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+
+
+
+
+@media (max-width:1100px) {
+  .netflix-ProfileSidebarToggle .sidebarListItem:hover .sidebarListItemText {
+    transform: translate(100%);
+  }
+}
+/* @media (max-width:1100px) {
+  .netflix-ProfileSidebar{
+   display: none;
+}
+} */

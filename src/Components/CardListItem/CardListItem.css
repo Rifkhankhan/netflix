@@ -1,0 +1,72 @@
+.netflix-card-item-container 
+{
+   margin: auto;
+   width: 98%;
+   height: 50px;
+   background-color: aqua;
+   margin-top: 1rem;
+   border-radius: 5px;
+   display: grid;
+   grid-template-columns: 20% 60% 20%;
+   overflow: hidden;
+   align-items: center;
+}
+.netflix-card-item-container:hover
+{
+  cursor: pointer;
+ 
+}
+
+.netflix-card-item-container  img
+{
+   width: 100%;
+   object-fit: cover;
+   height: 100%;
+
+}
+
+.netflix-card-item-container  .netflix-card-item-container-first-div{
+   display: flex;
+   flex-direction: column;
+   margin-left: .3rem;
+
+}
+.netflix-card-item-container  .netflix-card-item-container-last-div
+{
+   display: flex;
+   flex-direction: row;
+}
+.netflix-card-item-container  div p
+{
+   padding: 0%;
+   text-align: left;
+}
+.netflix-card-item-container  div p:first-child
+{
+   font-size: 15px;
+   font-weight: bold;
+}
+
+.card-btn{
+   display: none !important;
+   font-size: 25px !important;
+   flex-grow: 1;
+}
+
+.view-card-btn{
+   color: green;
+   display: none !important;
+   font-size: 25px !important;
+   
+}
+
+.delete-card-btn{
+   color: red;
+   display: none !important;
+   font-size: 25px !important;
+   
+}
+.netflix-card-item-container:hover .card-btn
+{
+  display: flex !important;
+}

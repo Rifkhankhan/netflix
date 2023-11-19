@@ -1,0 +1,131 @@
+.netflix-itemCarouselComponent-container
+{
+    width: 95%;
+    height: 200px;
+    margin-inline:0.5rem !important;
+    color: white;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.netflix-itemCarouselComponent-container 
+.netflix-itemCarouselComponent-sub-container
+{
+    padding-inline: 0.2rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transform: all 1s;
+    position: relative;
+}
+
+
+
+.netflix-itemCarouselComponent-container .slick-dots{
+    display: none !important;
+}
+
+.netflix-itemCarouselComponent-container .slick-slider button{
+   font-size: 50px;
+}
+
+
+ .three
+ .slick-slide {
+    width: calc(100%/ 5) !important;
+}
+
+
+
+.netflix-itemCarouselComponent-container  
+.netflix-itemCarouselComponent-container-image
+{
+    height: 200px !important;
+    width: 100%;
+    flex-grow: 1;
+
+}
+
+.netflix-itemCarouselComponent-container  
+.netflix-itemCarouselComponent-container-desc
+{
+    opacity: 0;
+    color: white;
+    position: absolute;
+    bottom:  0;
+    left: 0;
+ 
+}
+
+.netflix-itemCarouselComponent-container 
+.netflix-itemCarouselComponent-sub-container 
+.netflix-itemCarouselComponent-sub-container-like{
+    position: absolute;
+    right: 10px;
+    top:  10px;
+    width: 30px;
+    opacity: 0;
+    transition: all 0.3s;
+}
+.netflix-itemCarouselComponent-container 
+.netflix-itemCarouselComponent-sub-container 
+.netflix-itemCarouselComponent-sub-container-like:hover{
+   cursor: pointer;
+   transform: scale(1.1);
+}
+.netflix-itemCarouselComponent-container 
+.netflix-itemCarouselComponent-sub-container:hover
+{
+    background-color: rgba(1, 1, 33, 0.879);
+    z-index: 2;
+    cursor: pointer;
+}
+
+.netflix-itemCarouselComponent-container 
+.netflix-itemCarouselComponent-sub-container:hover 
+.netflix-itemCarouselComponent-container-image
+{
+   opacity: 0.3;
+}
+
+.netflix-itemCarouselComponent-container 
+.netflix-itemCarouselComponent-sub-container:hover
+ .netflix-itemCarouselComponent-container-desc
+{
+    padding-inline: 1rem;
+    opacity: 1;
+}
+
+.netflix-itemCarouselComponent-container 
+.netflix-itemCarouselComponent-sub-container:hover
+ .netflix-itemCarouselComponent-sub-container-like
+{
+    opacity: 1;
+}
+.netflix-itemCarouselComponent-container-heading{
+    text-transform: capitalize !important;
+
+}
+.name {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: capitalize !important;
+    margin-top: 55%;
+ }
+
+ .des {
+    color: #fff;
+    opacity: 0.8;
+    margin: 5px 0;
+    font-weight: 500;
+    font-size: 12px;
+ }
+
+
+@media (max-width:600px) {
+    .netflix-itemCarouselComponent-container
+    {
+        width: 100% !important;
+    }
+}
